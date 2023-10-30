@@ -1,4 +1,3 @@
-"use client";
 import {
   Popover,
   PopoverContent,
@@ -10,6 +9,7 @@ import Link from "next/link";
 import Logo from "../Logo";
 import GetAppButton from "./get-app-button";
 import MobileMenu from "./mobile-menu";
+import NavLink from "./navlink";
 
 const Navbar = () => {
   return (
@@ -23,20 +23,18 @@ const Navbar = () => {
             {navigationLinks.map((item) => {
               if (!item?.dropdown)
                 return (
-                  <Link
+                  <NavLink
+                    label={item.label}
+                    link={item.link}
                     key={item.label}
-                    href={item.link}
-                    className="text-white"
-                  >
-                    {item.label}
-                  </Link>
+                  />
                 );
               return (
                 <Popover key={item.label}>
                   <PopoverTrigger asChild>
                     <div
                       role="button"
-                      aria-label="dropdown button"
+                      aria-label={item.label}
                       key={item.label}
                       className="inline-flex text-white flex items-center"
                     >
@@ -47,9 +45,11 @@ const Navbar = () => {
                   <PopoverContent className="mt-5 bg-[#1B1B1B] text-[#E7E7E7] border-none p-0 max-w-[218px] rounded-none">
                     <div className="flex flex-col space-y-6 p-6  ">
                       {item.dropdown.map((el) => (
-                        <Link href={el.link} key={el.label} className="">
-                          {el.label}
-                        </Link>
+                        <NavLink
+                          link={el.link}
+                          label={el.label}
+                          key={el.label}
+                        />
                       ))}
                     </div>
                   </PopoverContent>

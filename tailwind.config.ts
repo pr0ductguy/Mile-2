@@ -42,7 +42,7 @@ module.exports = {
         },
       },
       fontFamily: {
-        instrumenalsans: ["Instrument Sans", "sans-serif"],
+        instrumental_sans: ["Instrument Sans", "sans-serif"],
         manrope: ["Manrope", "sans-serif"],
       },
       keyframes: {

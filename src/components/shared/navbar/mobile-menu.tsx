@@ -7,7 +7,7 @@ import {
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { navigationLinks } from "@/contants/navigation";
 import { Menu, X } from "lucide-react";
-import Link from "next/link";
+import NavLink from "./navlink";
 
 const MobileMenu = () => {
   return (
@@ -16,7 +16,7 @@ const MobileMenu = () => {
         asChild
         className="data-[state=closed]:block data-[state=open]:hidden"
       >
-        <button className="text-white">
+        <button aria-label="open menu" className="text-white">
           <Menu />
         </button>
       </SheetTrigger>
@@ -24,19 +24,22 @@ const MobileMenu = () => {
         asChild
         className="data-[state=closed]:hidden data-[state=open]:block"
       >
-        <button className="text-white">
+        <button aria-label="close menu" className="text-white">
           <X />
         </button>
       </SheetTrigger>
 
-      <SheetContent side="top" asChild className="bg-[#1B1B1B]">
+      <SheetContent side="left" asChild className="bg-[#1B1B1B] h-fit w-full">
         <div className="p-6 flex flex-col  space-y-6  top-[84px]">
           {navigationLinks.map((item) => {
             if (!item?.dropdown)
               return (
-                <Link key={item.label} href={item.link} className="text-white">
-                  {item.label}
-                </Link>
+                <NavLink
+                  link={item.link}
+                  label={item.label}
+                  key={item.label}
+                  isMobile
+                />
               );
             return (
               <Accordion type="single" collapsible key={item.label}>
@@ -50,9 +53,12 @@ const MobileMenu = () => {
                   <AccordionContent asChild className="pb-0">
                     <div className="flex flex-col space-y-6 px-0 py-6  text-white">
                       {item.dropdown.map((el) => (
-                        <Link href={el.link} key={el.label} className="">
-                          {el.label}
-                        </Link>
+                        <NavLink
+                          link={el.link}
+                          label={el.label}
+                          key={el.label}
+                          isMobile
+                        />
                       ))}
                     </div>
                   </AccordionContent>

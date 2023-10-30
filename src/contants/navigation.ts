@@ -12,7 +12,7 @@ export const navigationLinks = [
       },
       {
         label: "Contact Us",
-        link: "/about-us",
+        link: "/contact-us",
       },
       {
         label: "Privacy Policy",
