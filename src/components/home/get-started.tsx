@@ -50,7 +50,7 @@ const GetStarted = () => {
         <h2 className="text-2xl md:text-[2.5rem] text-center font-bold ">
           Get Started in 3 Simple Steps
         </h2>
-        <p className="font-manrope text-[12px] md:text-lg mt-2 font-semibold text-center">
+        <p className="font-manrope text-[12px] md:text-lg mt-2 font-semibold text-center text-mile-prime-400">
           Your journey with Miles begins with just a few taps
         </p>
         <div>
@@ -82,7 +82,7 @@ const GetStarted = () => {
               </div>
             </TabsContent>
             <TabsContent value="rider" className="mt-10 md:mt-16">
-              <div className="grid md:grid-cols-3 gap-6">
+              <div className="grid md:grid-cols-3 gap-6  place-content-center">
                 {riderSteps.map((step) => (
                   <Card
                     image={step.image}
@@ -104,7 +104,7 @@ export default GetStarted;
 
 const Card = ({ image, title, description }: any) => {
   return (
-    <div className="flex flex-col max-w-[404px] gap-3 rounded-xl border border-mile-prime-100 font-instrumental_sans pb-5 overflow-hidden">
+    <div className="flex flex-col mx-auto max-w-[404px] gap-3 rounded-xl border border-mile-prime-100 font-instrumental_sans pb-5 overflow-hidden">
       <Image src={image} alt="title" width={404} height={237} />
       <h3 className=" text-lg font-semibold capitalize px-5">{title}</h3>
       <p className="text-sm font-normal px-5">{description}</p>

@@ -24,7 +24,7 @@ const HomeHero = () => {
             alt="home hero image"
             width={510}
             height={608}
-            className="max-h-[400px] lg:max-h-none"
+            className="max-h-[400px] lg:max-h-none h-auto w-auto"
             priority
             sizes="(min-width: 1380px) 510px, (min-width: 1040px) calc(42.19vw - 64px), (min-width: 780px) calc(50vw - 71px), (min-width: 580px) 510px, 93.08vw"
           />

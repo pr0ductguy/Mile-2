@@ -1,12 +1,17 @@
 import Footer from "@/components/shared/footer";
 import Navbar from "@/components/shared/navbar";
 import type { Metadata } from "next";
-import { Instrument_Sans, Manrope } from "next/font/google";
 import "./globals.css";
 
-const instrumental_sans = Instrument_Sans({ subsets: ["latin"] });
-const manrope = Manrope({ subsets: ["latin"] });
-const mulish = Manrope({ subsets: ["latin"] });
+/* const instrumental_sans = Instrument_Sans({
+  subsets: ["latin"],
+  variable: "--font-instrumental_sans",
+});
+const manrope = Manrope({
+  subsets: ["latin"],
+  variable: "--font-manrope",
+});
+const mulish = Mulish({ subsets: ["latin"], variable: "--font-mulish" }); */
 
 export const metadata: Metadata = {
   title: "MILE",
@@ -32,9 +37,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body
-        className={` flex flex-col min-h-screen ${manrope.className} ${instrumental_sans.className} ${mulish.className}`}
-      >
+      <body className={` flex flex-col min-h-screen `}>
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />
