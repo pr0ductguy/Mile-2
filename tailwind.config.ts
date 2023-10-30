@@ -44,6 +44,7 @@ module.exports = {
       fontFamily: {
         instrumental_sans: ["Instrument Sans", "sans-serif"],
         manrope: ["Manrope", "sans-serif"],
+        mulish: ["Mulish", "sans-serif"],
       },
       keyframes: {
         "accordion-down": {

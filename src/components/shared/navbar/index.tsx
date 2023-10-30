@@ -13,7 +13,7 @@ import NavLink from "./navlink";
 
 const Navbar = () => {
   return (
-    <nav className="h-[84px] lg:h-[120px] bg-mile-black">
+    <nav className="h-[84px] lg:h-[120px] bg-mile-black font-instrumental_sans">
       <div className="flex wrapper  items-center justify-between  h-full">
         <Link href="/">
           <Logo />

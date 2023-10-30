@@ -1,11 +1,11 @@
 import Navbar from "@/components/shared/navbar";
-import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
 import { Instrument_Sans, Manrope } from "next/font/google";
 import "./globals.css";
 
 const instrumental_sans = Instrument_Sans({ subsets: ["latin"] });
 const manrope = Manrope({ subsets: ["latin"] });
+const mulish = Manrope({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "MILE",
@@ -32,7 +32,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={cn(instrumental_sans.className, "font-instrumental_sans")}
+        className={` ${manrope.className} ${instrumental_sans.className} ${mulish.className}`}
       >
         <Navbar />
         {children}
