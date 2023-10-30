@@ -1,3 +1,4 @@
+import Navbar from "@/components/shared/navbar";
 import type { Metadata } from "next";
 import "./globals.css";
 
@@ -9,8 +10,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body>{children}</body>
+    <html lang="en" suppressHydrationWarning>
+      <body>
+        <Navbar />
+        {children}
+      </body>
     </html>
   );
 }
