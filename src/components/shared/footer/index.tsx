@@ -1,3 +1,4 @@
+import AppDownloadButton from "@/components/AppDownloadButton";
 import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
 import Link from "next/link";
 import Logo from "../Logo";
@@ -52,14 +53,17 @@ const Footer = () => {
   return (
     <footer className="bg-mile-black font-mulish font-semibold text-mile-prime-50">
       <div className="wrapper h-full py-[104px]">
-        <div className=" grid md:grid-cols-3 gap-10">
+        <div className="flex flex-wrap flex-col md:flex-row gap-10 justify-between">
           <div className="flex flex-col">
             <Logo />
             <p className="mt-[16px] text-sm">
               Drive Smarter, Earn More with Miles
             </p>
+            <div className="flex space-x-4 mt-5">
+              <AppDownloadButton />
+            </div>
           </div>
-          <div>
+          <div className="shrink-0">
             <h3 className="uppercase text-mile-yellow font-extrabold">
               useful links
             </h3>
@@ -75,7 +79,7 @@ const Footer = () => {
               ))}
             </div>
           </div>
-          <div>
+          <div className="shrink-0">
             <h3 className="uppercase text-mile-yellow font-extrabold">
               Contact Us
             </h3>
