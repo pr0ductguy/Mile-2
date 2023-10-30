@@ -2,19 +2,19 @@ import Image from "next/image";
 
 const driverSteps = [
   {
-    image: "/assets/images/car.png",
+    image: "/assets/images/car.svg",
     title: "Earn as you ride",
     description:
       "Every Ride is a rewarding opportunity, putting more in your pocket as you ride.",
   },
   {
-    image: "/assets/images/cash.png",
+    image: "/assets/images/cash.svg",
     title: "Unbeatable Price",
     description:
       "Mile offers rides that won’t break the bank without compromising on top-notch service and quality.",
   },
   {
-    image: "/assets/images/wallet.png",
+    image: "/assets/images/wallet.svg",
     title: "Flexible Payment Option",
     description:
       "We offer a variety of payment methods to make your journey even more convenient. Choose the option that suits you best and enjoy the ride!",
@@ -53,12 +53,13 @@ const Card = ({ image, title, description }: any) => {
   return (
     <div className="flex mx-auto flex-col   max-w-[400px] min-h-[468px] gap-3 rounded-xl border border-mile-prime-100 bg-[#FAFAFA] font-instrumental_sans pb-5 overflow-hidden">
       <div className="pt-[59px] px-5">
-        <div className="h-[180px] relative  w-[269px]  lg:w-[269px]  overflow-hidden  flex justify-start">
+        <div className="h-[180px] relative   overflow-hidden  flex justify-start">
           <Image
             src={image}
             alt="title"
-            fill
-            className=" w-[269px] lg:w-[269px] h-[180px]   object-contain"
+            width={180}
+            height={180}
+            className="  object-contain"
           />
         </div>
       </div>

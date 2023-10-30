@@ -19,13 +19,13 @@ export const metadata: Metadata = {
   icons: [
     {
       media: "(prefers-color-scheme: light)",
-      url: "/assets/images/logo.png",
-      href: "/assets/images/logo.png",
+      url: "/assets/images/logo.svg",
+      href: "/assets/images/logo.svg",
     },
     {
       media: "(prefers-color-scheme: dark)",
-      url: "/assets/images/logo.png",
-      href: "/assets/images/logo.png",
+      url: "/assets/images/logo.svg",
+      href: "/assets/images/logo.svg",
     },
   ],
 };
@@ -37,6 +37,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head></head>
       <body className={` flex flex-col min-h-screen `}>
         <Navbar />
         <main className="flex-1">{children}</main>
