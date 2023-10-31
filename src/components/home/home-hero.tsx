@@ -4,7 +4,7 @@ import AppDownloadButton from "../AppDownloadButton";
 const HomeHero = () => {
   return (
     <section className="min-h-[450px] bg-mile-black">
-      <div className="wrapper py-[65px] flex items-center flex-col md:flex-row gap-[55px]">
+      <div className="wrapper py-[60px] flex items-center flex-col md:flex-row gap-[55px]">
         <div className="md:w-1/2 h-full justify-center items-center">
           <h2 className="font-bold leading-[41.912px] font-instrumental_sans text-[2rem] text-white lg:text-[3.5rem] lg:leading-[72px]">
             Every Ride is a <span className="text-mile-yellow">Rewarding</span>{" "}

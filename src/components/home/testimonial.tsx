@@ -4,11 +4,29 @@ import Image from "next/image";
 import "swiper/css";
 import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
 
+const SWIPER_BREAKPOINTS = {
+  // when window width is >= 320px
+  320: {
+    slidesPerView: 1,
+  },
+  // when window width is >= 480px
+  480: {
+    slidesPerView: 1,
+  },
+  // when window width is >= 640px
+  640: {
+    slidesPerView: 2,
+  },
+  1024: {
+    slidesPerView: 3,
+  },
+};
+
 const Testimonial = () => {
   return (
     <section>
       <div className="wrapper h-full pt-[100px] pb-[120px]">
-        <h2 className="text-2xl md:text-[2.5rem] text-center font-bold  capitalize">
+        <h2 className="text-2xl md:text-[2.5rem] font-instrumental_sans text-center font-bold  capitalize">
           what our users say about us
         </h2>
         <p className="font-manrope text-[12px] md:text-lg mt-2 font-semibold text-center text-mile-prime-400">
@@ -16,26 +34,7 @@ const Testimonial = () => {
           before
         </p>
         <div className="mt-10">
-          <Swiper
-            spaceBetween={20}
-            breakpoints={{
-              // when window width is >= 320px
-              320: {
-                slidesPerView: 1,
-              },
-              // when window width is >= 480px
-              480: {
-                slidesPerView: 1,
-              },
-              // when window width is >= 640px
-              640: {
-                slidesPerView: 2,
-              },
-              1024: {
-                slidesPerView: 3,
-              },
-            }}
-          >
+          <Swiper spaceBetween={20} breakpoints={SWIPER_BREAKPOINTS}>
             <SwiperSlide>
               <Card />
             </SwiperSlide>
@@ -119,9 +118,11 @@ const Card = () => {
           alt="testimonial user"
           className="mb-3 rounded-full"
         />
-        <div className="flex flex-col">
+        <div className="flex flex-col h-full">
           <p className="font-bold">Sarah D</p>
-          <p className="font-semibold capitaize">Driver Extraordinaire</p>
+          <p className="font-semibold capitalize mt-auto text-mile-prime-300">
+            Driver Extraordinaire
+          </p>
         </div>
       </div>
     </div>

@@ -28,7 +28,7 @@ const DriverAndPassenger = () => {
           <div>
             <Image
               src="/assets/images/home-woman-with-phone.png"
-              alt="man smiling"
+              alt="woman smiling"
               width={645}
               height={666}
             />
