@@ -23,7 +23,7 @@ const MileToken = () => {
           </div>
           <div className="md:rounded-tl-[64px] rounded-tl-[33px] bg-mile-yellow h-full lg:w-1/2 flex flex-col justify-center px-[56px] py-[69px] md:px-[93px] md:min-h-[607px] text-black">
             <h2 className="capitalize  mb-6 text-[25.143px] md:text-5xl font-bold">
-              miles token
+              $MILE token
             </h2>
             <p className="text-black text-[9.429px] md:text-lg font-semibold font-manrope">
               Miles Token is built on blockchain technology, which ensures

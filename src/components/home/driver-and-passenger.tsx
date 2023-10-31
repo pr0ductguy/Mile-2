@@ -1,4 +1,5 @@
 import Image from "next/image";
+import DownloadAppButton from "../download-app-button";
 
 const DriverAndPassenger = () => {
   return (
@@ -9,11 +10,12 @@ const DriverAndPassenger = () => {
             <h3 className="text-mile-black text-[1.75rem] lg:text-4xl font-bold max-w-[463px]">
               With Mile, you don&apos;t just drive; you thrive
             </h3>
-            <p className="max-w-[487px] font-manrope text-sm lg:text-lg mt-6 lg:leading-[36px]">
+            <p className="max-w-[487px] font-manrope text-sm lg:text-lg mt-6 lg:leading-[36px] mb-[59px]">
               Turn your rides into tangible results - It&apos;s not just about
               getting from A to B; it&apos;s about earning, flexibility, and a
               rewarding experience. Drivers get the chance to set preferences.
             </p>
+            <DownloadAppButton />
           </div>
           <div>
             <Image
@@ -37,11 +39,12 @@ const DriverAndPassenger = () => {
             <h3 className="text-mile-black text-[1.75rem] capitalize lg:text-4xl font-bold">
               Enjoy Safe, and comfortable rides with miles
             </h3>
-            <p className=" font-manrope text-sm lg:text-lg mt-6 lg:leading-[36px]">
+            <p className=" font-manrope text-sm lg:text-lg mt-6 lg:leading-[36px] mb-[59px]">
               Choose Mile for trips that priorities your safety and comfort
               while rewarding you every step of the way. Mile added security
               steps ensures safety.
             </p>
+            <DownloadAppButton />
           </div>
         </div>
       </div>
