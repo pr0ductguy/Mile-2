@@ -37,9 +37,9 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Manrope:wght@200;300;400;500;600;700;800&family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap"
         />
       </head>
-      <body className={` flex flex-col min-h-screen `}>
+      <body className={` flex flex-col min-h-screen`}>
         <Navbar />
-        <main className="flex-1">{children}</main>
+        <main className="flex-1 pt-[84px] lg:pt-[120px]">{children}</main>
         <Footer />
       </body>
     </html>

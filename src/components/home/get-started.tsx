@@ -47,7 +47,7 @@ const GetStarted = () => {
   return (
     <section className="py-[90px]">
       <div className="wrapper">
-        <h2 className="text-2xl md:text-[2.5rem] text-center font-bold ">
+        <h2 className="text-2xl md:text-[2.5rem] text-center font-bold font-instrumental_sans ">
           Get Started in 3 Simple Steps
         </h2>
         <p className="font-manrope text-[12px] md:text-lg mt-2 font-semibold text-center text-mile-prime-400">

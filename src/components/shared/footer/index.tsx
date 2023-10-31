@@ -103,7 +103,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="text-sm mt-20 md:mt-0">
-          &copy; 2023 MILES Technologies
+          &copy; {new Date().getFullYear()} MILES Technologies
         </div>
       </div>
     </footer>

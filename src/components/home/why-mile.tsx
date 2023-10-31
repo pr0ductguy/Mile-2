@@ -25,7 +25,7 @@ const WhyMile = () => {
   return (
     <section className="py-[90px]">
       <div className="wrapper">
-        <h2 className="text-2xl md:text-[2.5rem] text-center font-bold ">
+        <h2 className="text-2xl md:text-[2.5rem] text-center font-bold font-instrumental_sans">
           Why Choose MILE?
         </h2>
         <p className="font-manrope text-[12px] text-mile-prime-300 md:text-lg mt-2 font-semibold text-center">
