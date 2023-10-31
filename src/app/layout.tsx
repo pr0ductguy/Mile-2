@@ -1,17 +1,8 @@
+/* eslint-disable @next/next/no-page-custom-font */
 import Footer from "@/components/shared/footer";
 import Navbar from "@/components/shared/navbar";
 import type { Metadata } from "next";
 import "./globals.css";
-
-/* const instrumental_sans = Instrument_Sans({
-  subsets: ["latin"],
-  variable: "--font-instrumental_sans",
-});
-const manrope = Manrope({
-  subsets: ["latin"],
-  variable: "--font-manrope",
-});
-const mulish = Mulish({ subsets: ["latin"], variable: "--font-mulish" }); */
 
 export const metadata: Metadata = {
   title: "MILE",
@@ -37,7 +28,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <head></head>
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+          rel="preload"
+          as="style"
+          href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Manrope:wght@200;300;400;500;600;700;800&family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap"
+        />
+      </head>
       <body className={` flex flex-col min-h-screen `}>
         <Navbar />
         <main className="flex-1">{children}</main>

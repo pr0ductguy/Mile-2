@@ -2,19 +2,19 @@ import Image from "next/image";
 
 const driverSteps = [
   {
-    image: "/assets/images/car.svg",
+    image: "/assets/images/car.png",
     title: "Earn as you ride",
     description:
       "Every Ride is a rewarding opportunity, putting more in your pocket as you ride.",
   },
   {
-    image: "/assets/images/cash.svg",
+    image: "/assets/images/cash.png",
     title: "Unbeatable Price",
     description:
       "Mile offers rides that won’t break the bank without compromising on top-notch service and quality.",
   },
   {
-    image: "/assets/images/wallet.svg",
+    image: "/assets/images/wallet.png",
     title: "Flexible Payment Option",
     description:
       "We offer a variety of payment methods to make your journey even more convenient. Choose the option that suits you best and enjoy the ride!",

@@ -29,7 +29,11 @@ const MobileMenu = () => {
         </button>
       </SheetTrigger>
 
-      <SheetContent side="left" asChild className="bg-[#1B1B1B] h-fit w-full">
+      <SheetContent
+        side="left"
+        asChild
+        className="bg-[#1B1B1B] h-fit w-full border-none"
+      >
         <div className="p-6 flex flex-col  space-y-6  top-[84px]">
           {navigationLinks.map((item) => {
             if (!item?.dropdown)

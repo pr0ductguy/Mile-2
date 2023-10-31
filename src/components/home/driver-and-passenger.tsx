@@ -12,7 +12,7 @@ const DriverAndPassenger = () => {
             <p className="max-w-[487px] font-manrope text-sm lg:text-lg mt-6 lg:leading-[36px]">
               Turn your rides into tangible results - It&apos;s not just about
               getting from A to B; it&apos;s about earning, flexibility, and a
-              rewarding experience.
+              rewarding experience. Drivers get the chance to set preferences.
             </p>
           </div>
           <div>
@@ -33,14 +33,14 @@ const DriverAndPassenger = () => {
               height={666}
             />
           </div>
-          <div className="md:w-[463px] order-first md:order-last">
-            <h3 className="text-mile-black text-[1.75rem] lg:text-4xl font-bold max-w-[463px]">
-              With Mile, you don&apos;t just drive; you thrive
+          <div className="md:w-[550px] order-first md:order-last">
+            <h3 className="text-mile-black text-[1.75rem] capitalize lg:text-4xl font-bold">
+              Enjoy Safe, and comfortable rides with miles
             </h3>
-            <p className="max-w-[487px] font-manrope text-sm lg:text-lg mt-6 lg:leading-[36px]">
-              Turn your rides into tangible results - It&apos;s not just about
-              getting from A to B; it&apos;s about earning, flexibility, and a
-              rewarding experience.
+            <p className=" font-manrope text-sm lg:text-lg mt-6 lg:leading-[36px]">
+              Choose Mile for trips that priorities your safety and comfort
+              while rewarding you every step of the way. Mile added security
+              steps ensures safety.
             </p>
           </div>
         </div>

@@ -10,8 +10,8 @@ const HomeHero = () => {
             Every Ride is a <span className="text-mile-yellow">Rewarding</span>{" "}
             Adventure
           </h2>
-          <p className="text-mile-prime-50 mt-8 text-[12px] md:mt-6 md:text-lg max-w-[450px]">
-            Now you can earn rewards on every ride with us. Excited? Download
+          <p className="text-mile-prime-50 mt-8 text-[12px] md:mt-6 md:text-lg max-w-[500px]">
+            Now you can earn rewards on every Trip with us. Excited? Download
             the Mile app today!
           </p>
           <div className="flex space-x-2 mt-[24px] lg:mt-[49px]">
