@@ -6,26 +6,30 @@ import Link from "next/link";
 const ContactInformation = () => {
   return (
     <section className="">
-      <div className="wrapper flex h-full gap-[75px] lg:gap-[91px] pt-[46px] lg:pt-[139px] pb-[50px] lg:pb-[86px] flex-col lg:flex-row">
-        <div className="relative  order-last lg:order-first overflow-hidden ">
+      <div className="wrapper flex h-full gap-[75px] lg:gap-[91px] pb-[50px] lg:pb-[86px] flex-col lg:flex-row">
+        <div className="relative lg:w-1/2  order-last lg:order-first overflow-hidden  pt-[46px] lg:pt-[139px]">
           <Image
             src="/assets/images/map-bg.png"
-            fill
-            className="-z-10 absolute inset-0 hidden lg:flex object-cover"
+            width={463}
+            height={499}
+            className="-z-10 absolute top-0 hidden lg:flex object-cover"
             alt="map background"
           />
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.5769731090213!2d3.3419448749693443!3d6.574949993418457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b92068b703db3%3A0xc3e211894e5af282!2s46b%20Adekunle%20Fajuyi%20Way%2C%20Ikeja%20GRA%20101233%2C%20Lagos!5e0!3m2!1sen!2sng!4v1698796449713!5m2!1sen!2sng"
-            width={600}
-            height={450}
-            style={{ border: 0 }}
-            allowFullScreen
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-            title="Miles location"
-          />
+          <div className="lg:max-w-[600px] lg:w-full max-lg:w-full max-lg:max-w-none max-h-[450px] h-full bg-white">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.5769731090213!2d3.3419448749693443!3d6.574949993418457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b92068b703db3%3A0xc3e211894e5af282!2s46b%20Adekunle%20Fajuyi%20Way%2C%20Ikeja%20GRA%20101233%2C%20Lagos!5e0!3m2!1sen!2sng!4v1698796449713!5m2!1sen!2sng"
+              width={600}
+              height={450}
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Miles location"
+              className="w-full"
+            />
+          </div>
         </div>
-        <div>
+        <div className=" pt-[46px] lg:pt-[139px]">
           <div className="mb-12">
             <h3 className=" text-2xl lg:text-[40px] font-bold font-instrumental_sans">
               Head Office
