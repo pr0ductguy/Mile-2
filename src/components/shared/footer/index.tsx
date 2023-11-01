@@ -84,8 +84,10 @@ const Footer = () => {
               Contact Us
             </h3>
             <div className="flex flex-col  mt-[22px]">
-              <p className="font-semibold text-sm">info@milesapp.com</p>
-              <p className="font-semibold text-sm mt-2">
+              <p className="font-semibold text-sm">
+                <Link href="mailto:mile2023@gmail.com">mile2023@gmail.com</Link>
+              </p>
+              <p className="font-semibold text-sm mt-3">
                 <Link href="tel:0801-234-5678">0801-234-5678</Link>
               </p>
               <div className="flex space-x-4 mt-6 text-mile-black">
