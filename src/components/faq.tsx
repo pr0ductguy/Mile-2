@@ -9,7 +9,7 @@ import {
 const FaqList = () => {
   return (
     <section className="bg-white">
-      <div className="wrapper py-[94px]">
+      <div className="wrapper py-12 md:py-[94px]">
         <Accordion type="single" collapsible className="w-full ">
           {new Array(4).fill(0).map((el, idx) => (
             <AccordionItem
@@ -18,9 +18,9 @@ const FaqList = () => {
               key={idx}
             >
               <AccordionTrigger className="py-0">
-                <div className="flex justify-between w-full items-center p-8 text-white font-manrope text-lg cursor-pointer">
+                <div className="flex justify-between w-full items-center p-4 md:p-8 text-left text-white font-manrope text-lg cursor-pointer">
                   <p> What options are available to pay for mile rides?</p>
-                  <div className="w-[29px] h-[29px] flex justify-center items-center rounded-full bg-mile-yellow text-mile-black">
+                  <div className="w-[29px] shrink-0 h-[29px] flex justify-center items-center rounded-full bg-mile-yellow text-mile-black">
                     <Plus size={16} />
                   </div>
                 </div>
