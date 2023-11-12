@@ -7,6 +7,7 @@ import {
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { navigationLinks } from "@/contants/navigation";
 import { Menu, X } from "lucide-react";
+import GetAppButton from "./get-app-button";
 import NavLink from "./navlink";
 
 const MobileMenu = () => {
@@ -32,9 +33,9 @@ const MobileMenu = () => {
       <SheetContent
         side="left"
         asChild
-        className="bg-[#1B1B1B] h-fit w-full border-none"
+        className="bg-[#1B1B1B] h-fit w-full sm:max-w-none border-none "
       >
-        <div className="p-6 flex flex-col  space-y-6  top-[84px]">
+        <div className="p-6 flex flex-col  space-y-3  top-[84px]">
           {navigationLinks.map((item) => {
             if (!item?.dropdown)
               return (
@@ -51,11 +52,11 @@ const MobileMenu = () => {
                   value={item.label}
                   className="border-none p-0 min-h-0 "
                 >
-                  <AccordionTrigger className="justify-start space-x-2 py-0 text-white hover:no-underline">
+                  <AccordionTrigger className="justify-start space-x-2 py-0 text-white hover:no-underline ">
                     <span>{item.label}</span>
                   </AccordionTrigger>
-                  <AccordionContent asChild className="pb-0">
-                    <div className="flex flex-col space-y-6 px-0 py-6  text-white">
+                  <AccordionContent asChild className="!pb-0">
+                    <div className="flex flex-col space-y-6 px-0 py-6 !pb-0  text-white">
                       {item.dropdown.map((el) => (
                         <NavLink
                           link={el.link}
@@ -70,6 +71,7 @@ const MobileMenu = () => {
               </Accordion>
             );
           })}
+          <GetAppButton />
         </div>
       </SheetContent>
     </Sheet>
