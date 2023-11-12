@@ -30,7 +30,7 @@ const SingleBlogPage = async (props: Props) => {
 
   return (
     <div>
-      <div className="wrapper flex flex-col py-20">
+      <div className="wrapper flex flex-col py-20 prose prose-xl ">
         <h2 className=" text-[22px] md:text-[38px] lg:text-[56px] text-mile-black text-center mb-5 font-bold capitalize">
           {blog.title}
         </h2>
@@ -48,7 +48,7 @@ const SingleBlogPage = async (props: Props) => {
           className="max-h-[540px] rounded-[30px] my-10 object-cover"
           src={blog.image}
         />
-        <div className="max-w-4xl mx-auto w-full ">
+        <div className="max-w-4xl mx-auto w-full  ">
           <PortableText value={blog.content} components={RichTextComponents} />
         </div>
       </div>

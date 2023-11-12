@@ -66,6 +66,21 @@ export const getFaqs = async () => {
         question,
         _id,
         answer
+      }`
+    );
+
+    return faqs;
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+export const getLegalDocument = async (query: string) => {
+  try {
+    const faqs = await readClient.fetch(
+      groq`*[_type=='legal' && title == '${query}']{
+        title,
+       content
       }[0]`
     );
 
