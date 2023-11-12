@@ -34,7 +34,7 @@ const FaqList = ({ faqs }: Props) => {
                     </div>
                   </div>
                 </AccordionTrigger>
-                <AccordionContent className="text-mile-prime-100 py-0 px-8 text-sm font-manrope font-light">
+                <AccordionContent className="text-mile-prime-100 py-0 px-4 md:px-8 text-sm font-manrope font-light">
                   {el.answer}
                 </AccordionContent>
               </AccordionItem>
