@@ -2,7 +2,11 @@ const Careers = () => {
   return (
     <section>
       <div className="flex items-center justify-center flex-col md:flex-row">
-        <div className="wrapper flex flex-col gap-2 py-20 lg:pl-52">
+        <div
+          className="wrapper flex flex-col gap-2 py-20 lg:pl-52"
+          data-aos="fade-right"
+          data-aos-delay="300"
+        >
           <h2 className="text-[2.5rem] font-bold">Careers</h2>
           <p className="mt-2 font-manrope text-sm font-medium">
             Join A Workforce of Amazing People 🤩❤️

@@ -1,4 +1,5 @@
 /** @type {import('next').NextConfig} */
+import withPlaceholder from "@plaiceholder/next";
 const nextConfig = {
   images: {
     remotePatterns: [
@@ -14,4 +15,4 @@ const nextConfig = {
   },
 };
 
-module.exports = nextConfig;
+export default withPlaceholder(nextConfig);

@@ -827,6 +827,11 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
+"@plaiceholder/next@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@plaiceholder/next/-/next-3.0.0.tgz#b35d74286f14fccf8df6793a540d81ac16bca349"
+  integrity sha512-7UK/H1X64hwo2VaxOPKMXE+OY9IgmKLPsq/xKHZ+gU07oqQSfIWWIgpVVucMB3ZgVYah+68agR15BRuSxAuMHw==
+
 "@portabletext/react@^3.0.0", "@portabletext/react@^3.0.11":
   version "3.0.11"
   resolved "https://registry.yarnpkg.com/@portabletext/react/-/react-3.0.11.tgz#c5f31d9ea990391a3850ba4dfd685373107d9a21"
@@ -4922,6 +4927,16 @@ pkg-dir@^5.0.0:
   integrity sha512-NPE8TDbzl/3YQYY7CSS228s3g2ollTFnc+Qi3tqmqJp9Vg2ovUpixcJEo2HJScN2Ez+kEaal6y70c0ehqJBJeA==
   dependencies:
     find-up "^5.0.0"
+
+placeholder@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/placeholder/-/placeholder-1.0.2.tgz#17bf1021b33a1347c448a4377dfd44c545ad1a07"
+  integrity sha512-rmBFTiyVRoacodnRzs9znXOGZHnQF8YiBADpa7bKghCUpWsGwqa3wDIViXS6b3/ZGbEU2rjVb18HzTn93o7COg==
+
+plaiceholder@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/plaiceholder/-/plaiceholder-3.0.0.tgz#bd0a3ea0613523e4b8a8239ab7566432880d7fc3"
+  integrity sha512-jwHxxHPnr1BwRzPCeZgEK2BMsEy2327sWynw3qb6XC/oGgGDUTPtR8pFxFQmNArhMBwhkUbUr5OPhhIJpCa8eQ==
 
 pluralize-esm@^9.0.2:
   version "9.0.5"

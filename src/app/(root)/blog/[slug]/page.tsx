@@ -1,7 +1,7 @@
+import BlurImage from "@/components/BlurImage";
 import RichTextComponents from "@/components/rich-text";
 import { getBlogBySlug } from "@/sanity/action";
 import { PortableText } from "@portabletext/react";
-import Image from "next/image";
 import { notFound } from "next/navigation";
 
 export const revalidate = 900;
@@ -41,7 +41,7 @@ const SingleBlogPage = async (props: Props) => {
             day: "numeric",
           })}
         </p>
-        <Image
+        <BlurImage
           alt="banner"
           width={1277}
           height={540}
