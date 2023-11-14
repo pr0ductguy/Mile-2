@@ -14,7 +14,10 @@ import NavLink from "./navlink";
 const Navbar = () => {
   return (
     <nav className="h-[84px] lg:h-[120px] bg-mile-black font-instrumental_sans z-50 fixed inset-x-0 top-0 w-full">
-      <div className="flex wrapper  items-center justify-between  h-full">
+      <div
+        className="flex wrapper  items-center justify-between  h-full"
+        data-aos="fade-down"
+      >
         <Link href="/">
           <Logo />
         </Link>

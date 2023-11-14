@@ -54,7 +54,11 @@ const Footer = () => {
     <footer className="bg-mile-black font-mulish font-semibold text-mile-prime-50">
       <div className="wrapper h-full pt-[104px] pb-10">
         <div className="flex flex-wrap flex-col md:flex-row gap-10 justify-between">
-          <div className="flex flex-col">
+          <div
+            className="flex flex-col"
+            data-aos="fade-right"
+            data-aos-delay="300"
+          >
             <Logo />
             <p className="mt-[16px] text-sm">
               Drive Smarter, Earn More with Miles
@@ -63,7 +67,7 @@ const Footer = () => {
               <AppDownloadButton />
             </div>
           </div>
-          <div className="shrink-0">
+          <div className="shrink-0" data-aos="fade-left" data-aos-delay="300">
             <h3 className="uppercase text-mile-yellow font-extrabold">
               useful links
             </h3>
@@ -79,7 +83,7 @@ const Footer = () => {
               ))}
             </div>
           </div>
-          <div className="shrink-0">
+          <div className="shrink-0" data-aos="fade-left" data-aos-delay="300">
             <h3 className="uppercase text-mile-yellow font-extrabold">
               Contact Us
             </h3>
@@ -104,7 +108,11 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="text-sm mt-20 md:mt-0">
+        <div
+          className="text-sm mt-20 md:mt-0"
+          data-aos="fade-right"
+          data-aos-delay="300"
+        >
           &copy; {new Date().getFullYear()} MILES Technologies
         </div>
       </div>
