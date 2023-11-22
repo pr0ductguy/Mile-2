@@ -9,7 +9,7 @@ interface BuildQueryParams {
 }
 
 export function buildQuery(params: BuildQueryParams) {
-  const { type, query, category, page = 1, perPage = 20 } = params;
+  const { type, query, category, page = 1, perPage = 200 } = params;
 
   const conditions = [`*[_type=="${type}"`];
 

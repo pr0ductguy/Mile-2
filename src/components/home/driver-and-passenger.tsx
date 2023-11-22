@@ -23,8 +23,8 @@ const DriverAndPassenger = () => {
               alt="man smiling"
               width={645}
               height={666}
-              data-aos="fade-left"
-              data-aos-delay="300"
+              data-aos="zoom-in"
+              data-aos-duration={1200}
             />
           </div>
         </div>
@@ -35,14 +35,13 @@ const DriverAndPassenger = () => {
               alt="woman smiling"
               width={645}
               height={666}
-              data-aos="fade-right"
-              data-aos-delay="300"
+              data-aos="zoom-in"
+              data-aos-duration={1200}
             />
           </div>
           <div
             className="md:w-[550px] order-first md:order-last"
             data-aos="fade-up"
-            data-aos-delay="300"
           >
             <h3 className="text-mile-black text-[1.75rem] capitalize lg:text-4xl font-bold">
               Enjoy Safe, and comfortable rides with miles

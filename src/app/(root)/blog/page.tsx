@@ -2,7 +2,7 @@ import BlogCard from "@/components/blog/blog-card";
 import Hero from "@/components/shared/Hero";
 import { getBlogs } from "@/sanity/action";
 
-export const revalidate = 900;
+const revalidate = 3600;
 
 interface Props {
   searchParams: { [key: string]: string | undefined };

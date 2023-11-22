@@ -5,9 +5,9 @@ const Careers = () => {
     <section>
       <div className="grid md:grid-cols-2">
         <div
-          className="flex flex-col gap-2 py-20 lg:pl-52"
-          data-aos="fade-right"
-          data-aos-delay="300"
+          className="flex flex-col gap-2 py-20 text-center md:text-left lg:pl-52"
+          data-aos="zoom-in"
+          data-aos-duration={1200}
         >
           <h2 className="text-[2.5rem] font-bold">Careers</h2>
           <p className="mt-[10px] font-manrope text-sm font-medium">
@@ -20,7 +20,7 @@ const Careers = () => {
           <Link
             href="https://www.bamboohr.com/signup/"
             target="_blank"
-            className="flex justify-center items-center font-semibold mt-2 bg-mile-yellow rounded-full text-mile-black py-[14px] lg:py-[19px] px-[38px] lg:px-[51px] w-fit"
+            className="flex mx-auto md:mx-0 justify-center items-center font-semibold mt-2 bg-mile-yellow rounded-full text-mile-black py-[14px] lg:py-[19px] px-[38px] lg:px-[51px] w-fit"
           >
             Available Roles
           </Link>

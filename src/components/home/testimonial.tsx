@@ -29,19 +29,17 @@ const Testimonial = () => {
         <h2
           className="text-2xl md:text-[2.5rem] font-instrumental_sans text-center font-bold  capitalize"
           data-aos="fade-up"
-          data-aos-delay="300"
         >
           what our users say about us
         </h2>
         <p
           className="font-manrope text-[12px] md:text-lg mt-2 font-semibold text-center text-mile-prime-400"
           data-aos="fade-up"
-          data-aos-delay="400"
         >
           We&apos;re redefining the rider and driver experience like never
           before
         </p>
-        <div className="mt-10" data-aos="fade-up" data-aos-delay="500">
+        <div className="mt-10" data-aos="fade-up">
           <Swiper spaceBetween={20} breakpoints={SWIPER_BREAKPOINTS}>
             {data.map((item, idx) => (
               <SwiperSlide key={idx}>

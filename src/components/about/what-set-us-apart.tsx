@@ -9,22 +9,20 @@ const WhatSetUsAPart = () => {
           alt="what set us apart"
           width={649}
           height={665}
-          data-aos="fade-right"
-          data-aos-delay="300"
+          data-aos="zoom-in"
+          data-aos-duration={1200}
         />
       </div>
       <div className="lg:w-1/2 flex justify-end flex-col md:translate lg:-translate-y-11 mb-[31px] lg:mb-0 lg:pl-12 order-first lg:order-last">
         <h3
           className=" text-2xl md:text-[3.5rem] mb-2 md:mb-10 font-bold  text-mile-black"
-          data-aos="fade-left"
-          data-aos-delay="300"
+          data-aos="fade-up"
         >
           What Sets Us Apart
         </h3>
         <p
           className="text-mile-prime-300 font-manrope font-medium text-sm md:text-xl"
-          data-aos="fade-left"
-          data-aos-delay="400"
+          data-aos="fade-up"
         >
           Mile Cab-Hailing isn&apos;t your typical ride-sharing app; it&apos;s a
           revolutionary approach to commuting. We reward you with Mile Tokens

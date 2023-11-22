@@ -9,7 +9,6 @@ const HomeHero = () => {
           <h2
             className="font-bold leading-[41.912px] font-instrumental_sans text-[2rem] text-white lg:text-[3.5rem] lg:leading-[72px]"
             data-aos="fade-up"
-            data-aos-delay="300"
           >
             Every Ride is a <span className="text-mile-yellow">Rewarding</span>{" "}
             Adventure
@@ -17,7 +16,7 @@ const HomeHero = () => {
           <p
             className="text-mile-prime-50 mt-8 text-[12px] md:mt-6 md:text-lg max-w-[500px] font-manrope"
             data-aos="fade-up"
-            data-aos-delay="400"
+            data-aos-delay="300"
           >
             Now you can earn rewards on every Trip with us. Excited? Download
             the Mile app today!
@@ -25,15 +24,16 @@ const HomeHero = () => {
           <div
             className="flex space-x-2 mt-[24px] lg:mt-[49px]"
             data-aos="fade-up"
-            data-aos-delay="500"
+            data-aos-delay="300"
           >
             <AppDownloadButton />
           </div>
         </div>
         <div className="flex-1">
           <Image
-            data-aos="fade-left"
-            data-aos-delay="900"
+            data-aos="zoom-in"
+            data-aos-duration={1200}
+            data-aos-delay="600"
             src="/assets/images/home-hero.png"
             alt="home hero image"
             width={510}
