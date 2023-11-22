@@ -15,7 +15,7 @@ const HomeHero = () => {
             Adventure
           </h2>
           <p
-            className="text-mile-prime-50 mt-8 text-[12px] md:mt-6 md:text-lg max-w-[500px]"
+            className="text-mile-prime-50 mt-8 text-[12px] md:mt-6 md:text-lg max-w-[500px] font-manrope"
             data-aos="fade-up"
             data-aos-delay="400"
           >

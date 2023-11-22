@@ -48,19 +48,13 @@ const GetStarted = () => {
     <section className="py-[90px]">
       <div className="wrapper">
         <h2
-          className="text-2xl md:text-[2.5rem] text-center font-bold font-instrumental_sans "
+          className="text-2xl md:text-[2.5rem] text-center font-bold font-instrumental_sans mb-12"
           data-aos="fade-up"
           data-aos-delay="300"
         >
           Get Started in 3 Simple Steps
         </h2>
-        <p
-          className="font-manrope text-[12px] md:text-lg mt-2 font-semibold text-center text-mile-prime-400"
-          data-aos="fade-up"
-          data-aos-delay="400"
-        >
-          Your journey with Miles begins with just a few taps
-        </p>
+
         <div>
           <Tabs defaultValue="driver">
             <TabsList
@@ -120,10 +114,13 @@ const Card = ({ image, title, description }: any) => {
       className="flex flex-col mx-auto max-w-[404px] gap-3 rounded-xl border border-mile-prime-100 font-instrumental_sans pb-5 overflow-hidden"
       data-aos="fade-up"
       data-aos-delay="600"
+      data-aos-duration="300"
     >
       <Image src={image} alt="title" width={404} height={237} />
       <h3 className=" text-lg font-semibold capitalize px-5">{title}</h3>
-      <p className="text-sm font-normal px-5">{description}</p>
+      <p className="text-sm font-normal px-5 font-manrope leading-[28px] text-mile-prime-400">
+        {description}
+      </p>
     </div>
   );
 };

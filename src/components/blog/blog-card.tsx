@@ -1,5 +1,5 @@
-import Image from "next/image";
 import Link from "next/link";
+import BlurImage from "../BlurImage";
 
 interface Props {
   blog: {
@@ -18,7 +18,7 @@ const BlogCard = ({ blog }: Props) => {
   return (
     <Link href={`/blog/${slug}`} data-aos="fade-up" data-aos-delay="300">
       <article className="rounded-[20px] border border-mile-prime-100 overflow-hidden">
-        <Image
+        <BlurImage
           src={image}
           alt="blog-image"
           width={400}
@@ -30,10 +30,10 @@ const BlogCard = ({ blog }: Props) => {
             {category}
           </p>
           <h2 className="text-xl font-bold text-black mb-3">{title}</h2>
-          <p className="line-clamp-2 text-mile-prime-400 font-medium text-sm leading-[24px] font-instrumental_sans mb-5">
+          <p className="line-clamp-2 font-manrope text-mile-prime-400 font-medium text-sm leading-[24px] font-instrumental_sans mb-5">
             {summary}
           </p>
-          <p className="mt-autp">
+          <p className="mt-auto font-manrope">
             {new Date(createdAt).toLocaleDateString("en", {
               year: "numeric",
               month: "long",

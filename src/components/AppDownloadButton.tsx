@@ -48,7 +48,7 @@ const AppDownloadButton = () => {
 const AppLink = ({ href, icon, backgroundColor, subtitle, title }: any) => {
   return (
     <Link href={href} target="_blank" rel="noreferrer nofollow">
-      <div className="flex items-center justify-center rounded-lg bg-black px-4 py-1 text-white max-w-[187px]">
+      <div className="flex items-center justify-center rounded-lg bg-black px-4 py-1 text-white max-w-[187px] border border-gray-800">
         <div className="mr-3">{icon}</div>
         <div>
           <div className="whitespace-nowrap text-xs">{subtitle}</div>

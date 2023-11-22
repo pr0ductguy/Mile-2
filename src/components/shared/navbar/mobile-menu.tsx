@@ -31,7 +31,7 @@ const MobileMenu = () => {
       </SheetTrigger>
 
       <SheetContent
-        side="left"
+        side="top"
         asChild
         className="bg-[#1B1B1B] h-fit w-full sm:max-w-none border-none "
       >

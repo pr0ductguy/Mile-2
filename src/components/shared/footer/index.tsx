@@ -52,7 +52,7 @@ const socialLinks = [
 const Footer = () => {
   return (
     <footer className="bg-mile-black font-mulish font-semibold text-mile-prime-50">
-      <div className="wrapper h-full pt-[104px] pb-10">
+      <div className="wrapper h-full py-20">
         <div className="flex flex-wrap flex-col md:flex-row gap-10 justify-between">
           <div className="flex flex-col">
             <Logo />

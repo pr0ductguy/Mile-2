@@ -43,27 +43,11 @@ const Testimonial = () => {
         </p>
         <div className="mt-10" data-aos="fade-up" data-aos-delay="500">
           <Swiper spaceBetween={20} breakpoints={SWIPER_BREAKPOINTS}>
-            <SwiperSlide>
-              <Card />
-            </SwiperSlide>
-            <SwiperSlide>
-              <Card />
-            </SwiperSlide>
-            <SwiperSlide>
-              <Card />
-            </SwiperSlide>
-            <SwiperSlide>
-              <Card />
-            </SwiperSlide>
-            <SwiperSlide>
-              <Card />
-            </SwiperSlide>
-            <SwiperSlide>
-              <Card />
-            </SwiperSlide>
-            <SwiperSlide>
-              <Card />
-            </SwiperSlide>
+            {data.map((item, idx) => (
+              <SwiperSlide key={idx}>
+                <Card testimonial={item} />
+              </SwiperSlide>
+            ))}
 
             <div
               className="flex justify-end items-center  gap-5 mt-10 "
@@ -103,7 +87,11 @@ export const SwiperNavButtons = () => {
   );
 };
 
-const Card = () => {
+const Card = ({
+  testimonial: { occupation, name, text },
+}: {
+  testimonial: { occupation: string; name: string; text: string };
+}) => {
   return (
     <div className=" rounded-xl border border-mile-prime-100 font-manrope pb-5 overflow-hidden px-6 py-8 w-full max-w-[403px]">
       <Image
@@ -113,26 +101,38 @@ const Card = () => {
         height={24}
         className="mb-3"
       />
-      <p className="font-semibold">
-        Started driving with Miles to earn some extra income, and I was
-        pleasantly surprised. The flexibility is fantastic, and the rewards are
-        a great bonus. It&apos;s a win-win!
-      </p>
+      <p className="font-semibold font-manrope">{text}</p>
       <div className="flex gap-2 items-center mt-10">
-        <Image
-          src="https://s3-alpha-sig.figma.com/img/0c27/648b/dc88f3209ccfbcc5d9b9d169cf99426c?Expires=1699833600&Signature=gH--9tsLvs7SRvoM84M1wQSUWkT0p~gOdAqmJPNh8GBxkiBjs40MIgs4NnkkSRLbNm1pMxGY2c4QgkosjmdDgaOs25zDrosG~OgbucZa4LhqZ-SDMp1cK7wEiUDov-78uGq51fs~CqS35I8D9ht6w~5fMF1StGQ2OeyQIbyckTchtEnwvHZ6~YkaV1mGC5480PET~KZzI38XFTbskdwtYL~EEEGlgBOz-VGaKgWJ~vBzJakJzBEbADtIWUwIFELGPUYE7RC-g9svsUd2qFzIUG1PlKAaJ4wI~vy0qBKIcggx1-cFGv~t024UgEHu2Y7SEypKZ4n2i5CuOShtySqk3Q__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-          width={56}
-          height={56}
-          alt="testimonial user"
-          className="mb-3 rounded-full"
-        />
         <div className="flex flex-col h-full">
-          <p className="font-bold">Sarah D</p>
-          <p className="font-semibold capitalize mt-auto text-mile-prime-300">
-            Driver Extraordinaire
+          <p className="font-bold">{name}</p>
+          <p className="font-semibold font-manrope capitalize mt-auto text-mile-prime-300">
+            {occupation}
           </p>
         </div>
       </div>
     </div>
   );
 };
+
+const data = [
+  {
+    name: "Muyiwa Lawal",
+    occupation: "Driver",
+    text: "For the first time in history, online cab services allow us the privilege of setting safety rules for our vehicle. I am happy about this new development ",
+  },
+  {
+    name: "Daniel Chinonso",
+    occupation: "User",
+    text: "Mile is my go-to cab service! That token make it feel like a game, and you know games are for winning. Also I enjoy Top-notch service from the riders.",
+  },
+  {
+    name: "Usang Koti",
+    occupation: "Driver",
+    text: "Better pay and flexibility, the top code and many more. I simply love this app, goodbye to the traditional names we know, mile is here to stay. ",
+  },
+  {
+    name: "Anita Quadri",
+    occupation: "User",
+    text: "To know I'm a big fan of miles, check my friends phone. I'm also practically their sales reps...lol ",
+  },
+];

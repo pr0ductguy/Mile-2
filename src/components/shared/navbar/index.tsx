@@ -13,7 +13,7 @@ import NavLink from "./navlink";
 
 const Navbar = () => {
   return (
-    <nav className="h-[84px] lg:h-[120px] bg-mile-black font-instrumental_sans z-50 fixed inset-x-0 top-0 w-full">
+    <nav className="h-[84px] lg:h-[120px] z-[99999] bg-mile-black font-instrumental_sans fixed inset-x-0 top-0 w-full">
       <div
         className="flex wrapper  items-center justify-between  h-full"
         data-aos="fade-down"
@@ -45,7 +45,7 @@ const Navbar = () => {
                       <ChevronDown size="16" className="ml-[2px]" />
                     </div>
                   </PopoverTrigger>
-                  <PopoverContent className="mt-5 bg-[#1B1B1B] text-[#E7E7E7] border-none p-0 max-w-[218px] rounded-none">
+                  <PopoverContent className="mt-5 bg-[#1B1B1B] z-[99999] text-[#E7E7E7] border-none p-0 max-w-[218px] rounded-none">
                     <div className="flex flex-col space-y-6 p-6  ">
                       {item.dropdown.map((el) => (
                         <NavLink
