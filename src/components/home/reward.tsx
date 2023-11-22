@@ -12,8 +12,9 @@ const Reward = () => {
               alt="man smiling"
               width={615}
               height={690}
-              data-aos="zoom-in"
-              data-aos-duration={1200}
+              data-aos="zoom-in-up"
+              data-aos-duration={900}
+              data-aos-delay="300"
             />
           </div>
           <div className="md:w-[500px] order-first md:order-last">

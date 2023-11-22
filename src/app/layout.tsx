@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     siteName: "Mile",
     images: [
       {
-        url: "https://www.milerides.com/opengraph-image.png",
+        url: "http://www.milerides.com/opengraph-image.png",
         width: 1200,
         height: 630,
       },

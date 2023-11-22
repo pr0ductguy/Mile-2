@@ -1,4 +1,6 @@
 import Image from "next/image";
+import ManSmiling from "../../../public/assets/images/home-guy-smiling.png";
+import WomanSmiling from "../../../public/assets/images/home-woman-with-phone.png";
 import DownloadAppButton from "../download-app-button";
 
 const DriverAndPassenger = () => {
@@ -19,24 +21,26 @@ const DriverAndPassenger = () => {
           </div>
           <div>
             <Image
-              src="/assets/images/home-guy-smiling.png"
+              src={ManSmiling}
               alt="man smiling"
               width={645}
               height={666}
-              data-aos="zoom-in"
-              data-aos-duration={1200}
+              data-aos="zoom-in-up"
+              data-aos-duration={900}
+              data-aos-delay="300"
             />
           </div>
         </div>
         <div className="flex items-center mb-10 gap-5 md:gap-[77px] justify-between flex-col md:flex-row">
           <div>
             <Image
-              src="/assets/images/home-woman-with-phone.png"
+              src={WomanSmiling}
               alt="woman smiling"
               width={645}
               height={666}
-              data-aos="zoom-in"
-              data-aos-duration={1200}
+              data-aos="zoom-in-up"
+              data-aos-duration={900}
+              data-aos-delay="300"
             />
           </div>
           <div
