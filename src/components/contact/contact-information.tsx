@@ -8,7 +8,7 @@ const ContactInformation = () => {
     <section className="">
       <div className="wrapper flex h-full gap-[75px] lg:gap-[91px] pb-[50px] lg:pb-[86px] flex-col lg:flex-row">
         <div
-          className="relative lg:w-1/2  order-last lg:order-first overflow-hidden  pt-[46px] lg:pt-[139px]"
+          className="relative lg:w-1/2  order-last lg:order-first  pt-[46px] lg:pt-[139px]"
           data-aos="fade-right"
           data-aos-delay="300"
         >
@@ -16,7 +16,7 @@ const ContactInformation = () => {
             src="/assets/images/map-bg.png"
             width={463}
             height={499}
-            className="-z-10 absolute top-0 hidden lg:flex object-cover"
+            className="-z-10 absolute top-20 -left-3 hidden lg:flex object-cover"
             alt="map background"
           />
           <div className="lg:max-w-[600px] lg:w-full max-lg:w-full max-lg:max-w-none max-h-[450px] h-full bg-white">
