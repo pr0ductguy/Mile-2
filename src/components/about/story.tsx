@@ -32,7 +32,7 @@ export default Story;
 const PlayIcon = () => (
   <div
     role="button"
-    aria-label="play video"
+    aria-label="video"
     className="bg-[#040400] flex justify-center items-center w-[107px] h-[107px] text-mile-yellow rounded-full z-10"
   >
     <Play size={41} className="translate translate-x-1" />
