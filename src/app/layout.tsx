@@ -21,15 +21,16 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: "MILE",
-    description: "Test",
+    description:
+      "Now you can earn rewards on every Trip  with us. Excited? Download the Mile app today!",
     url: "https://www.mile.com",
 
     siteName: "Mile",
     images: [
       {
         url: "https://mile-website.vercel.app/opengraph-image.png",
-        width: 800,
-        height: 600,
+        width: 1200,
+        height: 630,
       },
     ],
     locale: "en",
