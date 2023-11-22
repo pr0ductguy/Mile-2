@@ -4,6 +4,10 @@ import Story from "@/components/about/story";
 import WhatSetUsAPart from "@/components/about/what-set-us-apart";
 import Hero from "@/components/shared/Hero";
 
+export const metadata = {
+  title: "About Us",
+};
+
 const AboutPage = () => {
   return (
     <>

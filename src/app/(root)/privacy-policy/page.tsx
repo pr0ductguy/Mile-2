@@ -3,6 +3,10 @@ import Hero from "@/components/shared/Hero";
 import { getLegalDocument } from "@/sanity/action";
 import { PortableText } from "@portabletext/react";
 
+export const metadata = {
+  title: "Privacy Policy",
+};
+
 const PrivacyPolicyPage = async () => {
   const policy = await getLegalDocument("Privacy Policy");
 

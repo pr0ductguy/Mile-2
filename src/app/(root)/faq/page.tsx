@@ -4,6 +4,10 @@ import { getFaqs } from "@/sanity/action";
 
 export const revalidate = 3600;
 
+export const metadata = {
+  title: "Faq",
+};
+
 const FAQPage = async () => {
   const faqs = await getFaqs();
 

@@ -17,6 +17,10 @@ interface BlogContent {
   _id: string;
 }
 
+export const metadata = {
+  title: "Blog",
+};
+
 interface Props {
   params: { slug: string };
 }
