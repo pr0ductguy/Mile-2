@@ -7,11 +7,7 @@ const ContactInformation = () => {
   return (
     <section className="">
       <div className="wrapper flex h-full gap-[75px] lg:gap-[91px] pb-[50px] lg:pb-[86px] flex-col lg:flex-row">
-        <div
-          className="relative lg:w-1/2  order-last lg:order-first  pt-[46px] lg:pt-[139px]"
-          data-aos="fade-right"
-          data-aos-delay="300"
-        >
+        <div className="relative lg:w-1/2  order-last lg:order-first  pt-[46px] lg:pt-[139px]">
           <Image
             src="/assets/images/map-bg.png"
             width={463}
@@ -33,11 +29,7 @@ const ContactInformation = () => {
             />
           </div>
         </div>
-        <div
-          className=" pt-[46px] lg:pt-[139px]"
-          data-aos="fade-left"
-          data-aos-delay="300"
-        >
+        <div className=" pt-[46px] lg:pt-[139px]">
           <div className="mb-12">
             <h3 className=" text-2xl lg:text-[40px] font-bold font-instrumental_sans">
               Head Office

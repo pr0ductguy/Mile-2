@@ -4,7 +4,7 @@ import NextTopLoader from "nextjs-toploader";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.mile.com"),
+  metadataBase: new URL("https://www.milerides.com"),
   title: {
     template: "%s | " + "MILE",
     default: "MILE",
@@ -23,12 +23,12 @@ export const metadata: Metadata = {
     title: "MILE",
     description:
       "Now you can earn rewards on every Trip  with us. Excited? Download the Mile app today!",
-    url: "https://www.mile.com",
+    url: "https://www.milerides.com",
 
     siteName: "Mile",
     images: [
       {
-        url: "https://mile-website.vercel.app/opengraph-image.png",
+        url: "https://www.milerides.com/opengraph-image.png",
         width: 1200,
         height: 630,
       },
@@ -66,7 +66,7 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Manrope:wght@200;300;400;500;600;700;800&family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap"
         />
       </head>
-      <body className={` flex flex-col min-h-screen`}>
+      <body className={` flex flex-col min-h-screen antialiased`}>
         <NextTopLoader color="#F8E71D" showSpinner={false} />
         {children}
       </body>

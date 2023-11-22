@@ -2,18 +2,10 @@ const CoreValues = () => {
   return (
     <section className="bg-mile-sec-50 md:py-[94px] py-[75px]">
       <div className="wrapper">
-        <h2
-          className="md:text-[3.5rem] font-bold text-2xl md:text-center  py-2"
-          data-aos="fade-up"
-          data-aos-delay="300"
-        >
+        <h2 className="md:text-[3.5rem] font-bold text-2xl md:text-center  py-2">
           Our Core Values
         </h2>
-        <p
-          className="font-manrope text-sm mt-4 text-mile-prime-400  md:text-xl md:text-center"
-          data-aos="fade-up"
-          data-aos-delay="400"
-        >
+        <p className="font-manrope text-sm mt-4 text-mile-prime-400  md:text-xl md:text-center">
           Our Values are Our Commitments To You
         </p>
         <div className="grid md:grid-cols-3 gap-8 md:gap-4 lg:gap-20 mt-[50px] lg:mt-[72px]">
@@ -21,8 +13,6 @@ const CoreValues = () => {
             <div
               key={item.title}
               className="border-dashed border rounded-[30px] border-[#7A7A7A] px-[27px] py-[50px]"
-              data-aos="fade-up"
-              data-aos-delay="500"
             >
               <h3 className="text-2xl font-bold mb-2 text-mile-black">
                 {item.title}

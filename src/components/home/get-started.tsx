@@ -47,21 +47,13 @@ const GetStarted = () => {
   return (
     <section className="py-[90px]">
       <div className="wrapper">
-        <h2
-          className="text-2xl md:text-[2.5rem] text-center font-bold font-instrumental_sans mb-12"
-          data-aos="fade-up"
-          data-aos-delay="300"
-        >
+        <h2 className="text-2xl md:text-[2.5rem] text-center font-bold font-instrumental_sans mb-12">
           Get Started in 3 Simple Steps
         </h2>
 
         <div>
           <Tabs defaultValue="driver">
-            <TabsList
-              data-aos="fade-up"
-              data-aos-delay="500"
-              className="grid w-[242px] md:w-[362px] grid-cols-2 mx-auto mt-6 md:mt-10 rounded-full h-auto text-black font-manrope text-lg"
-            >
+            <TabsList className="grid w-[242px] md:w-[362px] grid-cols-2 mx-auto mt-6 md:mt-10 rounded-full h-auto text-black font-manrope text-lg">
               <TabsTrigger
                 value="driver"
                 className="data-[state=active]:bg-mile-black data-[state=active]:text-mile-yellow rounded-full py-[12px] md:py-[19px] "
@@ -110,12 +102,7 @@ export default GetStarted;
 
 const Card = ({ image, title, description }: any) => {
   return (
-    <div
-      className="flex flex-col mx-auto max-w-[404px] gap-3 rounded-xl border border-mile-prime-100 font-instrumental_sans pb-5 overflow-hidden"
-      data-aos="fade-up"
-      data-aos-delay="600"
-      data-aos-duration="300"
-    >
+    <div className="flex flex-col mx-auto max-w-[404px] gap-3 rounded-xl border border-mile-prime-100 font-instrumental_sans pb-5 overflow-hidden">
       <Image src={image} alt="title" width={404} height={237} />
       <h3 className=" text-lg font-semibold capitalize px-5">{title}</h3>
       <p className="text-sm font-normal px-5 font-manrope leading-[28px] text-mile-prime-400">

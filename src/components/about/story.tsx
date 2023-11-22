@@ -6,18 +6,10 @@ import ClientOnly from "../client-only";
 const Story = () => {
   return (
     <section className="wrapper md:pt-[112px] pt-[46px] md:mb-[120px] mb-[55px]">
-      <h3
-        className="text-2xl md:text-[3.3125rem] font-bold text-mile-black mb-4 md:mb-10"
-        data-aos="fade-up"
-        data-aos-delay="600"
-      >
+      <h3 className="text-2xl md:text-[3.3125rem] font-bold text-mile-black mb-4 md:mb-10">
         The Mile Story
       </h3>
-      <div
-        className="rounded-[30px] h-[205px] md:h-[400px] bg-black lg:h-[540px] overflow-hidden"
-        data-aos="fade-up"
-        data-aos-delay="700"
-      >
+      <div className="rounded-[30px] h-[205px] md:h-[400px] bg-black lg:h-[540px] overflow-hidden">
         <ClientOnly>
           <ReactPlayer
             url="https://www.youtube.com/watch?v=LXb3EKWsInQ"

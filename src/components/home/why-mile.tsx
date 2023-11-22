@@ -25,18 +25,10 @@ const WhyMile = () => {
   return (
     <section className="py-[90px]">
       <div className="wrapper">
-        <h2
-          className="text-2xl md:text-[2.5rem] text-center font-bold font-instrumental_sans"
-          data-aos="fade-up"
-          data-aos-delay="300"
-        >
+        <h2 className="text-2xl md:text-[2.5rem] text-center font-bold font-instrumental_sans">
           Why Choose MILE?
         </h2>
-        <p
-          className="font-manrope text-[12px] text-mile-prime-300 md:text-lg mt-2 font-semibold text-center"
-          data-aos="fade-up"
-          data-aos-delay="400"
-        >
+        <p className="font-manrope text-[12px] text-mile-prime-300 md:text-lg mt-2 font-semibold text-center">
           We&apos;re redefining the rider and driver experience like never
           before
         </p>
@@ -59,11 +51,7 @@ export default WhyMile;
 
 const Card = ({ image, title, description }: any) => {
   return (
-    <div
-      className="flex mx-auto flex-col   max-w-[400px] min-h-[468px] gap-3 rounded-xl border border-mile-prime-100 bg-[#FAFAFA] font-instrumental_sans pb-5 overflow-hidden"
-      data-aos="fade-up"
-      data-aos-delay="500"
-    >
+    <div className="flex mx-auto flex-col   max-w-[400px] min-h-[468px] gap-3 rounded-xl border border-mile-prime-100 bg-[#FAFAFA] font-instrumental_sans pb-5 overflow-hidden">
       <div className="pt-[59px] px-5">
         <div className="h-[180px] relative   overflow-hidden  flex justify-start">
           <Image

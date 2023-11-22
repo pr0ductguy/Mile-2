@@ -16,7 +16,7 @@ interface Props {
 const BlogCard = ({ blog }: Props) => {
   const { slug, image, category, title, summary, createdAt } = blog;
   return (
-    <Link href={`/blog/${slug}`} data-aos="fade-up" data-aos-delay="300">
+    <Link href={`/blog/${slug}`}>
       <article className="rounded-[20px] border border-mile-prime-100 overflow-hidden">
         <BlurImage
           src={image}

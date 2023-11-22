@@ -25,8 +25,6 @@ const FaqList = ({ faqs }: Props) => {
                 value={el._id}
                 className="bg-mile-black rounded-[10px] max-w-[658px] w-full mx-auto mb-2"
                 key={el._id}
-                data-aos="fade-right"
-                data-aos-delay="300"
               >
                 <AccordionTrigger className="py-0">
                   <div className="flex justify-between w-full items-center p-4 md:p-8 text-left text-white font-manrope text-lg cursor-pointer">
