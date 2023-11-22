@@ -9,7 +9,7 @@ const Story = () => {
       <h3 className="text-2xl md:text-[3.3125rem] font-bold text-mile-black mb-4 md:mb-10">
         The Mile Story
       </h3>
-      <div className="rounded-[30px] h-[205px] md:h-[400px] bg-black lg:h-[540px] overflow-hidden">
+      <div className="rounded-[30px] h-[205px] md:h-[400px] bg-black lg:h-[541px] overflow-hidden">
         <ClientOnly>
           <ReactPlayer
             url="https://www.youtube.com/watch?v=LXb3EKWsInQ"
