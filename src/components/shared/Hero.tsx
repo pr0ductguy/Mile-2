@@ -1,6 +1,9 @@
+import Image from "next/image";
+import HeroBg from "../../../public/assets/images/hero-bg.png";
+
 const Hero = ({ title, subtitle }: { title: string; subtitle: string }) => {
   return (
-    <div className="relative lg:min-h-[635px] min-h-[300px] bg-black flex justify-center items-center flex-col gap-3 lg:gap-5 bg-[url('/assets/images/hero-bg.png')] bg-cover bg-[500px]  md:bg-center">
+    <div className="relative lg:min-h-[635px] min-h-[300px]  flex justify-center items-center flex-col gap-3 lg:gap-5  md:bg-center">
       <h2
         className="font-instrumental_sans font-bold text-[32px] text-white md:text-[56px] text-center"
         data-aos="fade-up"
@@ -15,6 +18,9 @@ const Hero = ({ title, subtitle }: { title: string; subtitle: string }) => {
       >
         {subtitle}
       </p>
+      <div className="absolute -z-10 inset-0 ">
+        <Image src={HeroBg} fill alt="hero" className="object-cover" />
+      </div>
     </div>
   );
 };
