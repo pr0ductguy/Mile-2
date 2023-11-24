@@ -4,11 +4,7 @@ const Careers = () => {
   return (
     <section>
       <div className="grid md:grid-cols-2">
-        <div
-          className="flex flex-col gap-2 py-20 text-center md:text-left lg:pl-52"
-          data-aos="zoom-in"
-          data-aos-duration={1200}
-        >
+        <div className="flex flex-col gap-2 py-20 text-center md:text-left lg:pl-52">
           <h2 className="text-[2.5rem] font-bold">Careers</h2>
           <p className="mt-[10px] font-manrope text-sm font-medium">
             Join A Workforce of Amazing People 🤩❤️

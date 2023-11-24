@@ -1,7 +1,7 @@
 import { groq } from "next-sanity";
 
+import { cache } from "react";
 import { readClient } from "./lib/client";
-import { buildQuery } from "./utils";
 
 interface GetResourcesParams {
   query: string;
@@ -32,18 +32,13 @@ interface GetResourcesParams {
   }
 }; */
 
-export const getBlogs = async (params: GetResourcesParams) => {
+export const getBlogs = cache(async (params: GetResourcesParams) => {
   const { query, category, page } = params;
 
   try {
     const resources = await readClient.fetch(
-      groq`${buildQuery({
-        type: "blog",
-        query,
-        category,
-        page: parseInt(page),
-      })}{
-        title,
+      groq`*[_type=='blog']{
+       title,
         _id,
         "image": poster.asset->url,
         "slug":slug.current,
@@ -57,9 +52,9 @@ export const getBlogs = async (params: GetResourcesParams) => {
   } catch (error) {
     console.log(error);
   }
-};
+});
 
-export const getFaqs = async () => {
+export const getFaqs = cache(async () => {
   try {
     const faqs = await readClient.fetch(
       groq`*[_type=='faq']{
@@ -73,9 +68,9 @@ export const getFaqs = async () => {
   } catch (error) {
     console.log(error);
   }
-};
+});
 
-export const getLegalDocument = async (query: string) => {
+export const getLegalDocument = cache(async (query: string) => {
   try {
     const faqs = await readClient.fetch(
       groq`*[_type=='legal' && title == '${query}']{
@@ -88,9 +83,9 @@ export const getLegalDocument = async (query: string) => {
   } catch (error) {
     console.log(error);
   }
-};
+});
 
-export const getBlogBySlug = async (slug: string) => {
+export const getBlogBySlug = cache(async (slug: string) => {
   try {
     const resource = await readClient.fetch(
       groq`*[_type=='blog' && slug.current == '${slug}']{
@@ -111,4 +106,4 @@ export const getBlogBySlug = async (slug: string) => {
   } catch (error) {
     console.log(error);
   }
-};
+});

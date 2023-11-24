@@ -25,7 +25,7 @@ const DriverAndPassenger = () => {
               alt="man smiling"
               width={645}
               height={666}
-              data-aos="zoom-in-up"
+              data-aos="fade-up"
               data-aos-duration={900}
               data-aos-delay="300"
             />
@@ -38,7 +38,7 @@ const DriverAndPassenger = () => {
               alt="woman smiling"
               width={645}
               height={666}
-              data-aos="zoom-in-up"
+              data-aos="fade-up"
               data-aos-duration={900}
               data-aos-delay="300"
             />
