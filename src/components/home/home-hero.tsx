@@ -4,7 +4,7 @@ import AppDownloadButton from "../AppDownloadButton";
 
 const HomeHero = () => {
   return (
-    <section className="min-h-[450px] bg-mile-black">
+    <section className="min-h-[450px] lg:min-h-[90vh] bg-mile-black">
       <div className="wrapper py-[60px] flex items-center flex-col md:flex-row gap-[55px]">
         <div className="md:w-1/2 h-full justify-center items-center">
           <h2

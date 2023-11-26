@@ -1,6 +1,6 @@
 const Hero = ({ title, subtitle }: { title: string; subtitle: string }) => {
   return (
-    <div className="relative lg:min-h-[635px] min-h-[300px] bg-black flex justify-center items-center flex-col gap-3 lg:gap-5 bg-[url('/assets/images/hero-bg.png')] bg-cover bg-[500px]  md:bg-cente">
+    <div className="relative lg:min-h-[635px] min-h-[300px] bg-black flex justify-center items-center flex-col gap-3 lg:gap-5 bg-[url('/assets/images/hero-bg.png')] bg-cover bg-[500px]  md:bg-center">
       <h2 className="font-instrumental_sans font-bold text-[32px] text-white md:text-[56px] text-center">
         {title}
       </h2>
