@@ -1,21 +1,27 @@
 import Image from "next/image";
+import AcceptRide from "../../../public/assets/images/accept-a-ride.png";
+import EnterYourDestination from "../../../public/assets/images/enter-your-destination.png";
+import GetToDestination from "../../../public/assets/images/get-to-destination.png";
+import MeetYourDriver from "../../../public/assets/images/meet-your-driver.png";
+import MeetYourPassenger from "../../../public/assets/images/meet-your-passenger.png";
+import SitBackAndRelax from "../../../public/assets/images/sit-back-relax.png";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "../ui/tabs";
 
 const riderSteps = [
   {
-    image: "/assets/images/accept-a-ride.png",
+    image: AcceptRide,
     title: "Step One - Accept a ride",
     description:
       "Accept drives based of your preference. You’re provided with information of the passengers pick up point and destination.",
   },
   {
-    image: "/assets/images/meet-your-passenger.png",
+    image: MeetYourPassenger,
     title: "Step Two - Meet your Passenger",
     description:
       "Get to the pick up point, verify the destination for accuracy. Miles provide you with an in app map to help you navigate easily",
   },
   {
-    image: "/assets/images/get-to-destination.png",
+    image: GetToDestination,
     title: "Step Three - Get to destination",
     description:
       "Upon arrival, the fare is calculated based on the distance traveled and any additional charges. The passenger get to make payment through our multiple payment option",
@@ -24,19 +30,19 @@ const riderSteps = [
 
 const driverSteps = [
   {
-    image: "/assets/images/enter-your-destination.png",
+    image: EnterYourDestination,
     title: "Step One - Enter your destination",
     description:
       "Launch the app, input your destination. Confirm your pickup location with a tap.Tap once more to match with a nearby driver.",
   },
   {
-    image: "/assets/images/meet-your-driver.png",
+    image: MeetYourDriver,
     title: "Step Two - Meet your driver",
     description:
       "You have the ability to monitor their approach on the map. As they get closer, prepare to meet them at your designated pickup spot.",
   },
   {
-    image: "/assets/images/sit-back-relax.png",
+    image: SitBackAndRelax,
     title: "Step Three - Sit back and relax",
     description:
       "Upon arrival, the payment process is simple. you have flexible choices. You can pay with cash, a credit card, or you wallet ($MILE token).",
@@ -103,7 +109,13 @@ export default GetStarted;
 const Card = ({ image, title, description }: any) => {
   return (
     <div className="flex flex-col mx-auto max-w-[404px] gap-3 rounded-xl border border-mile-prime-100 font-instrumental_sans pb-5 overflow-hidden">
-      <Image src={image} alt="title" width={404} height={237} />
+      <Image
+        src={image}
+        alt="title"
+        width={404}
+        height={237}
+        placeholder="blur"
+      />
       <h3 className=" text-lg font-semibold capitalize px-5">{title}</h3>
       <p className="text-sm font-normal px-5 font-manrope leading-[28px] text-mile-prime-400">
         {description}
