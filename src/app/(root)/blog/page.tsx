@@ -1,24 +1,14 @@
-import BlogCard from "@/components/blog/blog-card";
+import BlogList from "@/components/blog/blog-list";
 import Hero from "@/components/shared/Hero";
-import { getBlogs } from "@/sanity/action";
+import { Suspense } from "react";
 
 export const revalidate = 3600;
-
-interface Props {
-  searchParams: { [key: string]: string | undefined };
-}
 
 export const metadata = {
   title: "Blog",
 };
 
-const BlogPage = async ({ searchParams }: Props) => {
-  const resources = await getBlogs({
-    query: searchParams?.query || "",
-    category: searchParams?.category || "",
-    page: "1",
-  });
-
+const BlogPage = async () => {
   return (
     <>
       <Hero title="Blog" subtitle="Explore Our Latest Insights and Stories" />
@@ -28,13 +18,9 @@ const BlogPage = async ({ searchParams }: Props) => {
             <div className="text-center py-10 hidden last:block">
               <p className="text-3xl font-bold">No Content</p>
             </div>
-            {resources?.length > 0 && (
-              <div className="grid md:grid-cols-3 gap-10">
-                {resources.map((resource: any) => (
-                  <BlogCard key={resource._id} blog={resource} />
-                ))}
-              </div>
-            )}
+            <Suspense fallback={<BlogList.Loading />}>
+              <BlogList />
+            </Suspense>
           </div>
         </div>
       </section>
