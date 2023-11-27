@@ -32,9 +32,9 @@ const HomeHero = () => {
         </div>
         <div className="flex-1">
           <Image
-            data-aos="fade-up"
+            data-aos="zoom-out"
             data-aos-duration={900}
-            data-aos-delay="300"
+            data-aos-delay="700"
             src={HomeHeroImage}
             alt="home hero image"
             width={510}

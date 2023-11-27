@@ -9,8 +9,9 @@ const WhatSetUsAPart = () => {
           alt="what set us apart"
           width={649}
           height={665}
-          data-aos="fade-up"
-          data-aos-duration={1200}
+          data-aos="zoom-out"
+          data-aos-duration={900}
+          data-aos-delay="700"
         />
       </div>
       <div
