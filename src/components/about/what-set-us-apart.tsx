@@ -9,15 +9,9 @@ const WhatSetUsAPart = () => {
           alt="what set us apart"
           width={649}
           height={665}
-          data-aos="zoom-out"
-          data-aos-duration={900}
-          data-aos-delay="700"
         />
       </div>
-      <div
-        data-aos="fade-up"
-        className="lg:w-1/2 flex justify-end flex-col md:translate lg:-translate-y-11 mb-[31px] lg:mb-0 lg:pl-12 order-first lg:order-last"
-      >
+      <div className="lg:w-1/2 flex justify-end flex-col md:translate lg:-translate-y-11 mb-[31px] lg:mb-0 lg:pl-12 order-first lg:order-last">
         <h3 className=" text-2xl md:text-[3.5rem] mb-2 md:mb-10 font-bold  text-mile-black">
           What Sets Us Apart
         </h3>

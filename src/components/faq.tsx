@@ -27,9 +27,9 @@ const FaqList = ({ faqs }: Props) => {
                 key={el._id}
               >
                 <AccordionTrigger className="py-0">
-                  <div className="flex justify-between w-full items-center p-4 md:p-8 text-left text-white font-manrope text-lg cursor-pointer">
+                  <div className="flex justify-between w-full items-start p-4 md:p-8 text-left text-white font-manrope text-lg cursor-pointer">
                     <p>{el.question}</p>
-                    <div className="w-[29px] shrink-0 h-[29px] flex justify-center items-center rounded-full bg-mile-yellow text-mile-black">
+                    <div className="w-[29px] mt-1 shrink-0 h-[29px] flex justify-center items-center rounded-full bg-mile-yellow text-mile-black">
                       <Plus size={16} />
                     </div>
                   </div>

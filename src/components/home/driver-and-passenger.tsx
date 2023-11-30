@@ -8,7 +8,7 @@ const DriverAndPassenger = () => {
     <section className="bg-[#F8F8F8] py-[58px] md:py-[100px]">
       <div className="wrapper">
         <div className="flex items-center mb-10 gap-5 md:gap-[77px] justify-between flex-col md:flex-row">
-          <div className="md:w-[463px]" data-aos="fade-up" data-aos-delay="300">
+          <div className="md:w-[463px]">
             <h3 className="text-mile-black text-[1.75rem] lg:text-4xl font-bold max-w-[463px]">
               With Mile, you don&apos;t just drive; you thrive
             </h3>
@@ -25,9 +25,6 @@ const DriverAndPassenger = () => {
               alt="man smiling"
               width={645}
               height={666}
-              data-aos="zoom-out"
-              data-aos-duration={900}
-              data-aos-delay="700"
             />
           </div>
         </div>
@@ -38,15 +35,9 @@ const DriverAndPassenger = () => {
               alt="woman smiling"
               width={645}
               height={666}
-              data-aos="zoom-out"
-              data-aos-duration={900}
-              data-aos-delay="700"
             />
           </div>
-          <div
-            className="md:w-[550px] order-first md:order-last"
-            data-aos="fade-up"
-          >
+          <div className="md:w-[550px] order-first md:order-last">
             <h3 className="text-mile-black text-[1.75rem] capitalize lg:text-4xl font-bold">
               Enjoy Safe, and comfortable rides with miles
             </h3>
