@@ -107,3 +107,13 @@ export const getBlogBySlug = cache(async (slug: string) => {
     console.log(error);
   }
 });
+
+export type Blog = {
+  slug: string;
+  category: string;
+  title: string;
+  _id: string;
+  image: string;
+  summary: string;
+  createdAt: string;
+};

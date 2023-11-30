@@ -1,6 +1,6 @@
 import BlurImage from "@/components/BlurImage";
 import RichTextComponents from "@/components/rich-text";
-import { getBlogBySlug } from "@/sanity/action";
+import { Blog, getBlogBySlug, getBlogs } from "@/sanity/action";
 import { PortableText } from "@portabletext/react";
 import { notFound } from "next/navigation";
 
@@ -17,13 +17,52 @@ interface BlogContent {
   _id: string;
 }
 
-export const metadata = {
-  title: "Blog",
-};
-
 interface Props {
   params: { slug: string };
 }
+
+export const generateMetadata = async ({
+  params: { slug },
+}: {
+  params: {
+    slug: string;
+  };
+}) => {
+  const blog: Blog = await getBlogBySlug(slug);
+  return {
+    title: blog?.title,
+    description: blog?.summary,
+    openGraph: {
+      images: blog.image,
+      title: blog?.title,
+      description: blog?.summary,
+      url: `https://www.milerides.com/blog/${slug}`,
+      siteName: blog?.title,
+      type: "website",
+    },
+  };
+};
+
+export const generateStaticParams = async () => {
+  try {
+    const blogs = await getBlogs({
+      query: "",
+      category: "",
+      page: "1",
+    });
+
+    const params = blogs.map((blog: Blog) => {
+      return {
+        slug: blog.slug,
+      };
+    });
+
+    return params;
+  } catch (error) {
+    console.log(error);
+    throw new Error("Error fetching posts");
+  }
+};
 
 const SingleBlogPage = async (props: Props) => {
   const blog: BlogContent = await getBlogBySlug(props.params.slug);
