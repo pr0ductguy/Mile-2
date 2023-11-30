@@ -98,6 +98,7 @@ const SingleBlogPage = async (props: Props) => {
           height={540}
           className="max-h-[540px] min-h-[281px]  rounded-[30px] my-10 object-cover"
           src={blog.image}
+          priority
         />
         <div className="max-w-4xl mx-auto w-full  ">
           <PortableText value={blog.content} components={RichTextComponents} />
