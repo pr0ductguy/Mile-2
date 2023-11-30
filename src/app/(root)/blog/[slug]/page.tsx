@@ -1,7 +1,9 @@
 import BlurImage from "@/components/BlurImage";
 import RichTextComponents from "@/components/rich-text";
-import { Blog, getBlogBySlug, getBlogs } from "@/sanity/action";
+import { Blog, getBlogBySlug } from "@/sanity/action";
+import { readClient } from "@/sanity/lib/client";
 import { PortableText } from "@portabletext/react";
+import { groq } from "next-sanity";
 import { notFound } from "next/navigation";
 
 export const revalidate = 900;
@@ -45,11 +47,17 @@ export const generateMetadata = async ({
 
 export const generateStaticParams = async () => {
   try {
-    const blogs = await getBlogs({
-      query: "",
-      category: "",
-      page: "1",
-    });
+    const blogs = await readClient.fetch(
+      groq`*[_type=='blog']{
+       title,
+        _id,
+        "image": poster.asset->url,
+        "slug":slug.current,
+        category,
+        summary,
+        'createdAt':_createdAt
+      }`
+    );
 
     const params = blogs.map((blog: Blog) => {
       return {
