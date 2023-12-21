@@ -34,7 +34,11 @@ const Testimonial = () => {
           before
         </p>
         <div className="mt-10">
-          <Swiper spaceBetween={20} breakpoints={SWIPER_BREAKPOINTS}>
+          <Swiper
+            spaceBetween={20}
+            breakpoints={SWIPER_BREAKPOINTS}
+            loop={true}
+          >
             {data.map((item, idx) => (
               <SwiperSlide key={idx}>
                 <Card testimonial={item} />
@@ -64,14 +68,14 @@ export const SwiperNavButtons = () => {
       <button
         aria-label="Prev"
         onClick={() => swiper.slidePrev()}
-        className={`bg-mile-black text-mile-yellow rounded-full p-2`}
+        className={`bg-mile-black text-mile-yellow rounded-full p-2 disabled:cursor-not-allowed`}
       >
         <ArrowLeft className=" w-6 h-6 " />
       </button>
       <button
         onClick={() => swiper.slideNext()}
         aria-label="Next"
-        className={`bg-mile-black text-mile-yellow rounded-full p-2`}
+        className={`bg-mile-black text-mile-yellow rounded-full p-2 disabled:cursor-not-allowed`}
       >
         <ArrowRight className=" w-6 h-6 " />
       </button>
@@ -85,7 +89,7 @@ const Card = ({
   testimonial: { occupation: string; name: string; text: string };
 }) => {
   return (
-    <div className=" rounded-xl border border-mile-prime-100 font-manrope pb-5 overflow-hidden px-6 py-8 w-full max-w-[403px]">
+    <div className=" rounded-xl border h-full min-h-[300px] flex flex-col  border-mile-prime-100 font-manrope pb-5 overflow-hidden px-6 py-8 w-full max-w-[403px]">
       <Image
         src="/assets/icons/stars.svg"
         alt="stars"
@@ -94,7 +98,7 @@ const Card = ({
         className="mb-3"
       />
       <p className="font-semibold font-manrope">{text}</p>
-      <div className="flex gap-2 items-center mt-10">
+      <div className="flex gap-2 items-center mt-auto">
         <div className="flex flex-col h-full">
           <p className="font-bold">{name}</p>
           <p className="font-semibold font-manrope capitalize mt-auto text-mile-prime-300">

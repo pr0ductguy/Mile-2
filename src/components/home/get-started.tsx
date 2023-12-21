@@ -7,7 +7,7 @@ import MeetYourPassenger from "../../../public/assets/images/meet-your-passenger
 import SitBackAndRelax from "../../../public/assets/images/sit-back-relax.png";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "../ui/tabs";
 
-const riderSteps = [
+const driverSteps = [
   {
     image: AcceptRide,
     title: "Step One - Accept a ride",
@@ -28,7 +28,7 @@ const riderSteps = [
   },
 ];
 
-const driverSteps = [
+const riderSteps = [
   {
     image: EnterYourDestination,
     title: "Step One - Enter your destination",
