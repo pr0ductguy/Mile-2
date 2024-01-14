@@ -15,7 +15,7 @@ const MobileMenu = () => {
     <Sheet>
       <SheetTrigger
         asChild
-        className="data-[state=closed]:block data-[state=open]:hidden"
+        className="data-[state=closed]:block data-[state=open]:hidden  selection:lg:hidden"
       >
         <button aria-label="open menu" className="text-white">
           <Menu />
@@ -33,7 +33,7 @@ const MobileMenu = () => {
       <SheetContent
         side="top"
         asChild
-        className="bg-[#1B1B1B] h-fit w-full sm:max-w-none border-none "
+        className="bg-[#1B1B1B] h-fit w-full sm:max-w-none border-none  lg:hidden"
       >
         <div className="p-6 flex flex-col  space-y-3  top-[84px]">
           {navigationLinks.map((item) => {

@@ -1,5 +1,6 @@
 import {
   Popover,
+  PopoverClose,
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover";
@@ -45,11 +46,13 @@ const Navbar = () => {
                   <PopoverContent className="mt-5 bg-[#1B1B1B] z-[99999] text-[#E7E7E7] border-none p-0 max-w-[218px] rounded-none">
                     <div className="flex flex-col space-y-6 p-6  ">
                       {item.dropdown.map((el) => (
-                        <NavLink
-                          link={el.link}
-                          label={el.label}
+                        <Link
+                          className="text-white py-1 w-fit"
+                          href={el.link}
                           key={el.label}
-                        />
+                        >
+                          <PopoverClose>{el.label}</PopoverClose>
+                        </Link>
                       ))}
                     </div>
                   </PopoverContent>
