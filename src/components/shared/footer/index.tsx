@@ -85,7 +85,9 @@ const Footer = () => {
             </h3>
             <div className="flex flex-col  mt-[22px]">
               <p className="font-semibold text-sm">
-                <Link href="mailto:mile2023@gmail.com">mile2023@gmail.com</Link>
+                <Link href="mailto:support@mileadmin.com">
+                  support@mileadmin.com
+                </Link>
               </p>
               <p className="font-semibold text-sm mt-3">
                 <Link href="tel:0801-234-5678">0801-234-5678</Link>
@@ -105,7 +107,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="text-sm mt-20 md:mt-0">
-          &copy; {new Date().getFullYear()} MILES Technologies
+          &copy; {new Date().getFullYear()} Mile One Integrated Services Limited
         </div>
       </div>
     </footer>
