@@ -85,7 +85,7 @@ const ContactInformation = () => {
                   Phone Number
                 </p>
                 <p className="font-manrope text-mile-prime-400">
-                  <Link href="tel:+234808080808080"> +234808080808080</Link>
+                  <Link href="tel:+234808080808080"> +2348012345678</Link>
                 </p>
               </div>
             </div>
@@ -128,7 +128,7 @@ const ContactInformation = () => {
                 </p>
                 <p className="font-manrope text-mile-prime-400">
                   <Link href="mailto:mile2023@gmail.com">
-                    mile2023@gmail.com
+                    support@mileadmin.com
                   </Link>
                 </p>
               </div>
