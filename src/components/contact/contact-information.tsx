@@ -85,7 +85,7 @@ const ContactInformation = () => {
                   Phone Number
                 </p>
                 <p className="font-manrope text-mile-prime-400">
-                  <Link href="tel:+234808080808080"> +2348012345678</Link>
+                  <Link href="tel:+2347087916435">+2347087916435</Link>
                 </p>
               </div>
             </div>

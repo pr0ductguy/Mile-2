@@ -90,7 +90,7 @@ const Footer = () => {
                 </Link>
               </p>
               <p className="font-semibold text-sm mt-3">
-                <Link href="tel:+2348012345678">+2348012345678</Link>
+                <Link href="tel:++2347087916435">+2347087916435</Link>
               </p>
               <div className="flex space-x-4 mt-6 text-mile-black">
                 {socialLinks.map((item) => (
