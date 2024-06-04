@@ -27,7 +27,7 @@ const Story = () => {
           ref={videoRef}
           src="https://res.cloudinary.com/dbjrkugfl/video/upload/v1710171769/IMG_1707_a9vy4n.mp4"
           className="w-full h-full"
-          poster="/assets/images/good-vibes.png"
+          poster="/assets/images/about-video-cover.png"
           onEnded={() => {
             setIsPlaying(false);
           }}

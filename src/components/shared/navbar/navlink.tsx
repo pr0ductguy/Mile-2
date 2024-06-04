@@ -22,7 +22,7 @@ const NavLink = ({
   return (
     <Link
       href={link}
-      className={cn("text-white py-1 w-fit", {
+      className={cn("text-white py-1 w-fit outline-none focus:outline-none", {
         "border-b border-mile-yellow": isActive,
       })}
     >

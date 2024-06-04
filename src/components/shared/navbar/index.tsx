@@ -51,7 +51,9 @@ const Navbar = () => {
                           href={el.link}
                           key={el.label}
                         >
-                          <PopoverClose>{el.label}</PopoverClose>
+                          <PopoverClose className="outline-none focus:outline-none">
+                            {el.label}
+                          </PopoverClose>
                         </Link>
                       ))}
                     </div>
